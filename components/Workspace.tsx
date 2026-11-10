@@ -371,7 +371,7 @@ export default function Workspace({
       <main className="login">
         <Brand />
         <h1>A ligação está a ser preparada.</h1>
-        <p>A base de dados da Precision Building ainda não está configurada.</p>
+        <p>A base de dados da Precision Build ainda não está configurada.</p>
         <Link className="button" href="/demonstracao">
           Ver demonstração
         </Link>
@@ -380,7 +380,7 @@ export default function Workspace({
   return (
     <div className="workspace">
       <aside>
-        <Brand />
+        <Brand dark />
         <div className="workspace-label">
           {clientView ? "PORTAL DO CLIENTE" : "GESTÃO DA EMPRESA"}
         </div>
@@ -440,7 +440,7 @@ export default function Workspace({
             </button>
           )}
           <Link href="/">Website público</Link>
-          <small>Precision Building · v0.1</small>
+          <small>Precision Build · v0.1</small>
         </div>
       </aside>
       <div className="workspace-content">
@@ -472,7 +472,7 @@ export default function Workspace({
           <div className="page-title">
             <div>
               <div className="eyebrow">
-                {project?.location ?? "PRECISION BUILDING"}
+                {project?.location ?? "PRECISION BUILD"}
                 {project ? " / " + project.service : ""}
               </div>
               <h1>

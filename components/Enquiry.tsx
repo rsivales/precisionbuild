@@ -1,6 +1,7 @@
 "use client";
 import { useState } from "react";
 import Script from "next/script";
+import Link from "next/link";
 export default function Enquiry() {
   const [message, setMessage] = useState("");
   const [busy, setBusy] = useState(false);
@@ -57,11 +58,13 @@ export default function Enquiry() {
         Website
         <input name="website" tabIndex={-1} autoComplete="off" />
       </label>
-      <label className="check">
-        <input type="checkbox" required />
-        Autorizo o contacto para análise deste pedido. Os dados serão utilizados
-        apenas para esse fim.
-      </label>
+      <p className="muted">
+        Usamos os seus dados para responder ao pedido. Saiba mais na{" "}
+        <Link className="privacy-link" href="/politica-de-privacidade">
+          Política de Privacidade
+        </Link>
+        .
+      </p>
       {enabled && (
         <>
           <Script

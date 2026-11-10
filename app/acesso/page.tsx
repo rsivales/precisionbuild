@@ -10,7 +10,7 @@ export default function Login() {
     <main className="login">
       <Brand />
       <div className="login-card">
-        <div className="eyebrow">PRECISION BUILDING</div>
+        <div className="eyebrow">PRECISION BUILD</div>
         <h1>Bem-vindo à sua obra.</h1>
         <p>Acesso de clientes e equipa.</p>
         <form

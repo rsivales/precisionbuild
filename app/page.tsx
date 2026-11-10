@@ -142,9 +142,12 @@ export default function Home() {
         </section>
       </main>
       <footer>
-        <Brand />
-        <span>Precision Building · Construção com precisão.</span>
-        <Link href="/acesso">Acesso da equipa</Link>
+        <Brand dark />
+        <span>Precision Build · Construção com precisão.</span>
+        <div className="public-footer-links">
+          <Link href="/politica-de-privacidade">Política de Privacidade</Link>
+          <Link href="/acesso">Acesso da equipa</Link>
+        </div>
       </footer>
     </>
   );
